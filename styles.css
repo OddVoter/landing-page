@@ -1,5 +1,5 @@
 body {
-  background-color: #0E6E8E; }
+  background-color: #006e90; }
 
 div#header {
   position: absolute;
@@ -8,7 +8,7 @@ div#header {
   left: 0;
   right: 0;
   height: calc(100vh - 16px);
-  background-color: #EBECED;
+  background-color: #ffffff;
   margin-top: 16px; }
   div#header .sign-up-box {
     position: relative;
@@ -46,7 +46,7 @@ div#header {
     div#header .sign-up-box button {
       width: 134px;
       height: 32px;
-      background-color: #F15938;
+      background-color: #f18f01;
       border: none;
       color: #fff;
       text-transform: uppercase;
@@ -57,13 +57,13 @@ div#rest-of-page {
   top: 100vh;
   left: 0;
   right: 0;
-  background-color: #F15938;
+  background-color: #f18f01;
   height: 100vh; }
   div#rest-of-page .section {
-    background-color: #F15938;
+    background-color: #f18f01;
     min-height: 490px;
-    color: #F3F1F1; }
+    color: #ffffff; }
     div#rest-of-page .section.blue {
-      background-color: #0E6E8E; }
+      background-color: #006e90; }
 
 /*# sourceMappingURL=styles.css.map */
