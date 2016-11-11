@@ -1,0 +1,86 @@
+$blue: #0E6E8E
+$orange: #F15938
+$white: #EBECED
+$white-text: #F3F1F1
+
+body
+  background-color: $blue
+// body::after
+//   content: ""
+//   background-image: url('assets/OddVoter_Website2.jpg')
+//   background-size: 1000px 2473px
+//   opacity: 0.3
+//   top: 0
+//   left: 0
+//   bottom: 0
+//   right: 0
+//   position: absolute
+//   z-index: -1
+
+@mixin placeholder
+  &::-webkit-input-placeholder
+    @content
+  &:-moz-placeholder
+    @content
+  &::-moz-placeholder
+    @content
+  &:-ms-input-placeholder
+    @content
+
+div#header
+  position: absolute
+  top: 0
+  bottom: 100vh
+  left: 0
+  right: 0
+  height: calc(100vh - 16px)
+  background-color: $white
+  margin-top: 16px
+  // position: relative
+  .sign-up-box
+    position: relative
+    // width: 382px
+    width: 400px
+    height: calc(100% - 85px - 16px)
+    margin-top: calc(50vh - 85px - 16px)
+    margin-left: calc(50vw - 191px)
+    text-align: center
+    h1
+      font-size: 70px
+    p
+      font-size: 18px
+      line-height: 22px
+    input
+      width: 232px
+      height: 30px
+      border: 1px solid #BCBDBE
+      padding-left: 12px
+      @include placeholder
+        font-style: italic
+        color: #6B6C6D
+        font-size: 16px
+    button
+      width: 134px
+      height: 32px
+      background-color: $orange
+      border: none
+      color: #fff
+      text-transform: uppercase
+      font-size: 16px
+
+div#rest-of-page
+  position: absolute
+  top: 100vh
+  left: 0
+  right: 0
+  background-color: $orange
+  height: 100vh
+  .section
+    background-color: $orange
+    min-height: 490px
+    color: $white-text
+    &.blue
+      background-color: $blue
+    h2
+      // font-size: 
+      // fixed font sizes for regular; vw font sizes under media query
