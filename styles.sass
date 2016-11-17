@@ -8,11 +8,11 @@ $light-blue: #41BBD9
 
 html
   height: 100%
+  background-color: $orange
 
 body
   width: 100%
   height: 100%
-  // background-color: $blue
 // body::after
 //   content: ""
 //   background-image: url('assets/OddVoter_Website2.jpg')
@@ -34,6 +34,33 @@ body
     @content
   &:-ms-input-placeholder
     @content
+
+@font-face
+  font-family: 'DIN-Regular'
+  src: url('DIN-Regular.otf') format('otf')
+
+@font-face
+  font-family: 'DINPro-Light'
+  src: url('DINPro-Light.otf') format('otf')
+
+@font-face
+  font-family: 'DINPro-Black'
+  src: url('DINPro-Black.otf') format('otf')
+
+body
+  font-family: 'DIN-Regular', arial, sans-serif
+  font-weight: 400
+
+.light-weight
+  font-family: 'DINPro-Light', arial, sans-serif
+  font-weight: 300
+
+.black-weight
+  font-family: 'DINPro-Black', arial, sans-serif
+  font-weight: 800
+
+.inline
+  display: inline-block
 
 .header-footer-bar
   position: fixed
@@ -62,24 +89,39 @@ div#fixed-background
   background-position: center center
   z-index: -1
 
+#header
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+
 .sign-up-box
   width: 400px
   text-align: center
+  img
+    height: 76px
   h1
     font-size: 70px
+    margin-top: 12px
+    margin-bottom: 12px
+    .light-weight
+      letter-spacing: -6px
+      margin-right: 6px
   p
     font-size: 18px
-    line-height: 22px
+    line-height: 20px
+    margin-bottom: 24px
   input
+    vertical-align: middle
     width: 232px
-    height: 30px
+    height: 28px
     border: 1px solid #BCBDBE
     padding-left: 12px
     @include placeholder
-      font-style: italic
       color: #6B6C6D
       font-size: 16px
   button
+    vertical-align: middle
     width: 134px
     height: 32px
     background-color: $orange
@@ -89,16 +131,48 @@ div#fixed-background
     font-size: 16px
 
 .section
-  display: flex
-  flex-wrap: wrap
-  justify-content: center
-  align-items: center
   min-height: 490px
   height: 100%
   color: $white-text
   margin-top: 14px
+  text-align: center
+  margin: 0 auto
+  &:before
+    content: ' '
+    display: inline-block
+    vertical-align: middle
+    height: 100%
+  .inner
+    display: inline-block
+    vertical-align: middle
+    margin: 0 auto
+    max-width
   &.blue
     background-color: $blue
+    background-size: auto
   h2
-    // font-size: 
-    // fixed font sizes for regular; vw font sizes under media query
+    font-size: 30px
+    text-transform: uppercase
+  p
+    max-width: 560px
+    margin-top: 24px
+    margin-bottom: 24px
+    font-size: 20px
+    line-height: 25px
+  &.for
+    h2
+      text-transform: none
+    li
+      margin-top: 20px
+      font-size: 18px
+      font-family: 'DINPro-Light', arial, sans-serif
+      font-weight: 300
+      // list-style-image: url('assets/li.png')
+    ul
+      max-width: 340px
+    .inline
+      margin-left: 64px
+
+
+
+// need a media query for smaller than 560
