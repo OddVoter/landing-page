@@ -31,6 +31,7 @@ body {
   display: inline-block; }
 
 .header-footer-bar {
+  z-index: 2;
   position: fixed;
   left: 0;
   right: 0;
@@ -113,12 +114,23 @@ div#fixed-background {
   color: #ffffff;
   margin-top: 14px;
   text-align: center;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
   .section:before {
     content: " ";
     display: inline-block;
     vertical-align: middle;
     height: 100%; }
+  .section:after {
+    position: absolute;
+    content: " ";
+    background-image: url("assets/divider.png");
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 100%;
+    top: calc(100% - 25px);
+    left: 0px;
+    z-index: 1; }
   .section .inner {
     display: inline-block;
     vertical-align: middle;
@@ -141,10 +153,13 @@ div#fixed-background {
     margin-top: 20px;
     font-size: 18px;
     font-family: "DINPro-Light", arial, sans-serif;
-    font-weight: 300; }
+    font-weight: 300;
+    line-height: 25px; }
   .section.for ul {
     max-width: 340px; }
   .section.for .inline {
     margin-left: 64px; }
+  .section.for:after {
+    background-image: none; }
 
 /*# sourceMappingURL=styles.css.map */

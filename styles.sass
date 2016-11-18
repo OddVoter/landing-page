@@ -63,6 +63,7 @@ body
   display: inline-block
 
 .header-footer-bar
+  z-index: 2
   position: fixed
   left: 0
   right: 0
@@ -137,11 +138,22 @@ div#fixed-background
   margin-top: 14px
   text-align: center
   margin: 0 auto
+  position: relative
   &:before
     content: ' '
     display: inline-block
     vertical-align: middle
     height: 100%
+  &:after
+    position: absolute
+    content: ' '
+    background-image: url('assets/divider.png')
+    background-repeat: no-repeat
+    height: 50px
+    width: 100%
+    top: calc(100% - 25px)
+    left: 0px
+    z-index: 1
   .inner
     display: inline-block
     vertical-align: middle
@@ -167,11 +179,14 @@ div#fixed-background
       font-size: 18px
       font-family: 'DINPro-Light', arial, sans-serif
       font-weight: 300
+      line-height: 25px
       // list-style-image: url('assets/li.png')
     ul
       max-width: 340px
     .inline
       margin-left: 64px
+    &:after
+      background-image: none
 
 
 
