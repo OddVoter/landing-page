@@ -97,7 +97,8 @@ div#fixed-background
   align-items: center
 
 .sign-up-box
-  width: 400px
+  max-width: 400px
+  width: 80vw
   text-align: center
   img
     height: 76px
@@ -113,6 +114,9 @@ div#fixed-background
     line-height: 20px
     margin-bottom: 24px
   input
+    -webkit-appearance: none
+    margin: 0px
+    -webkit-border-radius: 0px
     vertical-align: middle
     width: 232px
     height: 28px
@@ -189,4 +193,32 @@ div#fixed-background
 
 
 
-// need a media query for smaller than 560
+@media only screen and (max-width: 800px)
+  .section.for .inline
+    margin-left: 0px
+    display: block
+    &:first-child
+      margin-bottom: 40px
+
+@media only screen and (max-width: 375px)
+  .sign-up-box
+    h1
+      font-size: 50px
+    input
+      @include placeholder
+        font-size: 12px
+    button
+      font-size: 12px
+  .section.for
+    h2
+      font-size: 24px
+    li
+      font-size: 14px
+      line-height: 20px
+
+@media only screen and (max-width: 560px)
+  .what
+    .inner
+      float: left
+      margin: 20px
+      margin-top: 40px

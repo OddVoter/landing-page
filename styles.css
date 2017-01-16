@@ -65,7 +65,8 @@ div#fixed-background {
   align-items: center; }
 
 .sign-up-box {
-  width: 400px;
+  max-width: 400px;
+  width: 80vw;
   text-align: center; }
   .sign-up-box img {
     height: 76px; }
@@ -81,6 +82,9 @@ div#fixed-background {
     line-height: 20px;
     margin-bottom: 24px; }
   .sign-up-box input {
+    -webkit-appearance: none;
+    margin: 0px;
+    -webkit-border-radius: 0px;
     vertical-align: middle;
     width: 232px;
     height: 28px;
@@ -161,5 +165,36 @@ div#fixed-background {
     margin-left: 64px; }
   .section.for:after {
     background-image: none; }
+
+@media only screen and (max-width: 800px) {
+  .section.for .inline {
+    margin-left: 0px;
+    display: block; }
+    .section.for .inline:first-child {
+      margin-bottom: 40px; } }
+@media only screen and (max-width: 375px) {
+  .sign-up-box h1 {
+    font-size: 50px; }
+  .sign-up-box input::-webkit-input-placeholder {
+    font-size: 12px; }
+  .sign-up-box input:-moz-placeholder {
+    font-size: 12px; }
+  .sign-up-box input::-moz-placeholder {
+    font-size: 12px; }
+  .sign-up-box input:-ms-input-placeholder {
+    font-size: 12px; }
+  .sign-up-box button {
+    font-size: 12px; }
+
+  .section.for h2 {
+    font-size: 24px; }
+  .section.for li {
+    font-size: 14px;
+    line-height: 20px; } }
+@media only screen and (max-width: 560px) {
+  .what .inner {
+    float: left;
+    margin: 20px;
+    margin-top: 40px; } }
 
 /*# sourceMappingURL=styles.css.map */
