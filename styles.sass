@@ -37,26 +37,26 @@ body
 
 @font-face
   font-family: 'DIN-Regular'
-  src: url('DIN-Regular.otf') format('otf')
+  src: url('/assets/DIN-Regular.otf') format('otf'), url('/assets/din-regular-webfont.woff2') format('woff2'), url('/assets/din-regular-webfont.woff') format('woff')
 
 @font-face
-  font-family: 'DINPro-Light'
-  src: url('DINPro-Light.otf') format('otf')
+  font-family: 'dinlight'
+  src: url('/assets/DINPro-Light.otf') format('otf'), url('/assets/DINPro-Light.woff2') format('woff2'), url('assets/DINPro-Light.woff') format('woff')
 
 @font-face
   font-family: 'DINPro-Black'
-  src: url('DINPro-Black.otf') format('otf')
+  src: url('/assets/DINPro-Black.otf') format('otf'), url('/assets/DINPro-Black.woff2') format('woff2'), url('assets/DINPro-Black.woff') format('woff')
 
 body
-  font-family: 'DIN-Regular', arial, sans-serif
+  font-family: 'DIN-Regular', Times, sans-serif
   font-weight: 400
 
 .light-weight
-  font-family: 'DINPro-Light', arial, sans-serif
+  font-family: 'DINPro-Light', 'DIN-Regular', Times, sans-serif
   font-weight: 300
 
 .black-weight
-  font-family: 'DINPro-Black', arial, sans-serif
+  font-family: 'DINPro-Black', 'DIN-Regular', Times, sans-serif
   font-weight: 800
 
 .inline
@@ -158,7 +158,6 @@ div#fixed-background
     display: inline-block
     vertical-align: middle
     margin: 0 auto
-    max-width
   &.blue
     background-color: $blue
     background-size: auto
