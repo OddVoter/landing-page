@@ -1,0 +1,145 @@
+<!doctype html>
+
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>OddVoter</title>
+  <meta name="description" content="OddVoter">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/stylesheets/reset.css">
+  <link rel="stylesheet" href="/stylesheets/styles.css">
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body ng-controller="MainCtrl" ng-cloak>
+
+  <div id="fixed-background"></div>
+  <div id="header-bar" class="header-footer-bar"></div>
+  <!--orange bar at top actually has a shadow-->
+  <!--white dividers also have a shadow (use png for now)-->
+  <!--is it supposed to be parallaxed?-->
+  <div id="header" class="section blue">
+    <div class="sign-up-box">
+      <img src="/assets/otter.png">
+      <h1><span class="light-weight">Odd</span><span class="black-weight">Voter</span></h1>
+      <!--<form action="">
+        <input placeholder="Email Address" type="email" disabled /><button disabled>Sign Up Now</button>
+      </form>-->
+
+      {% if confirmed %}
+        <p>
+          <strong>You've been confirmed!!!</strong> <br>Thanks for your interest. You'll hear back from us when there's something ready to try out.
+        </p>
+      {% else %}
+        <p>
+          Unlock your citizenship, share your voice directly with your local leaders.
+        </p>
+      {% endif %}
+
+      {% if error %}
+        <div class="alert alert-warning" role="alert" ng-hide="hide">
+          <button type="button" class="close" ng-click="hide=true" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          {{- error }}
+        </div>
+      {% endif %}
+
+      {% if !confirmed %}
+        <form ng-submit="submit()">
+          <div ng-class="{'has-error': formError}">
+            <input placeholder="Email Address" type="email" ng-model="email" ng-disabled="submitted">
+            <span>
+              <button type="submit" ng-disabled="submitted">Sign Up Now</button>
+            </span>
+          </div>
+          <div class="alert alert-info" role="alert" ng-if="formSuccess">
+            Sweet! Please check your inbox and click on the confirmation link.
+          </div>
+          <div class="alert alert-warning" role="alert" ng-if="formError">
+            {% raw %}{{errorMsg}}{% endraw %}
+          </div>
+        </form>
+      {% endif %}
+    </div>
+  </div>
+  <div class="section"></div>
+  <div class="section blue what">
+    <div class="inner">
+      <h2 class="black-weight">What Is OddVoter?</h2>
+      
+      <p class="light-weight">Our mission is simple, to make voting a habit. We believe that by actively participating in local discourse, citizens will be inclined to actively participate in even the most minor city ballots.</p>
+      <p class="light-weight">We aim to promote active civic engagement by enabling citizens to easily cast their opinion on local trending issues presented by their elected officials.</p>
+    </div>
+  </div>
+  <div class="section"></div>
+  <div class="section blue for">
+    <div class="inner">
+      <div class="inline">
+        <h2><span class="light-weight">For Atlanta</span> <span class="black-weight">Citizens</span></h2>
+        <ul>
+          <li>Easier than finding the time to attend<br>a public City Council meeting</li>
+          <li>Ensure your local government<br>hears your opinion</li>
+          <li>Democracy cannot thrive<br>without your participation</li>
+        </ul>
+      </div>
+      <div class="inline">
+        <h2><span class="light-weight">For Atlanta</span> <span class="black-weight">City Officials</span></h2>
+        <ul>
+          <li>Find out what your constituents are saying</li>
+          <li>Get data on a neighborhood<br>by neighborhood</li>
+          <li>An app built just for<br>you to help you be the best representative<br>for your constituency</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="footer-bar" class="header-footer-bar"></div>  
+
+  <div id="preload">
+    <img src="/assets/orange-graffiti.jpg" width="1" height="1" alt="Image 01" />
+  </div>
+
+
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+  <script>
+    var imageShowing = 'first';
+    window.onscroll = function() {
+      var swapPoint = window.innerHeight * 2 + 30;
+      if (imageShowing === 'first') {
+        if (document.body.scrollTop > swapPoint) {
+          imageShowing = 'second';
+          document.getElementById('fixed-background').style.backgroundImage = "url('/assets/orange-graffiti.jpg')";
+        }
+      }
+      if (imageShowing === 'second') {
+        if (document.body.scrollTop < swapPoint) {
+          imageShowing = 'first';
+          document.getElementById('fixed-background').style.backgroundImage = "url('/assets/orange-skyline.jpg')";
+        }
+      }
+    };
+  </script>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  <script src="/javascripts/script.js"></script>
+  {% if googleAnalytics %}
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', '{{ googleAnalytics }}', 'auto');
+      ga('send', 'pageview');
+    </script>
+  {% endif %}
+</body>
+</html>

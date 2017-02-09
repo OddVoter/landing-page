@@ -1,3 +1,7 @@
+* {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
 html {
   height: 100%;
   background-color: #f18f01; }
@@ -11,10 +15,10 @@ body {
   src: url("/assets/DIN-Regular.otf") format("otf"), url("/assets/din-regular-webfont.woff2") format("woff2"), url("/assets/din-regular-webfont.woff") format("woff"); }
 @font-face {
   font-family: "dinlight";
-  src: url("/assets/DINPro-Light.otf") format("otf"), url("/assets/DINPro-Light.woff2") format("woff2"), url("assets/DINPro-Light.woff") format("woff"); }
+  src: url("/assets/DINPro-Light.otf") format("otf"), url("/assets/DINPro-Light.woff2") format("woff2"), url("/assets/DINPro-Light.woff") format("woff"); }
 @font-face {
   font-family: "DINPro-Black";
-  src: url("/assets/DINPro-Black.otf") format("otf"), url("/assets/DINPro-Black.woff2") format("woff2"), url("assets/DINPro-Black.woff") format("woff"); }
+  src: url("/assets/DINPro-Black.otf") format("otf"), url("/assets/DINPro-Black.woff2") format("woff2"), url("/assets/DINPro-Black.woff") format("woff"); }
 body {
   font-family: "DIN-Regular", Times, sans-serif;
   font-weight: 400; }
@@ -52,7 +56,7 @@ div#fixed-background {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url("assets/orange-skyline.jpg");
+  background-image: url("/assets/orange-skyline.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -82,12 +86,14 @@ div#fixed-background {
     line-height: 20px;
     margin-bottom: 24px; }
   .sign-up-box input {
+    color: black;
+    float: left;
     -webkit-appearance: none;
     margin: 0px;
     -webkit-border-radius: 0px;
     vertical-align: middle;
-    width: 232px;
-    height: 28px;
+    width: 238px;
+    height: 33px;
     border: 1px solid #BCBDBE;
     padding-left: 12px; }
     .sign-up-box input::-webkit-input-placeholder {
@@ -103,6 +109,7 @@ div#fixed-background {
       color: #6B6C6D;
       font-size: 16px; }
   .sign-up-box button {
+    float: left;
     vertical-align: middle;
     width: 134px;
     height: 32px;
@@ -128,7 +135,7 @@ div#fixed-background {
   .section:after {
     position: absolute;
     content: " ";
-    background-image: url("assets/divider.png");
+    background-image: url("/assets/divider.png");
     background-repeat: no-repeat;
     height: 50px;
     width: 100%;

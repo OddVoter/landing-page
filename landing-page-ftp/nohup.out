@@ -1,0 +1,74 @@
+[0mGET / [32m200 [0m25.272 ms - 4472[0m
+[0mGET / [32m200 [0m6.198 ms - 4472[0m
+[0mGET / [36m304 [0m5.286 ms - -[0m
+[0mGET / [32m200 [0m3.598 ms - 4472[0m
+[0mGET / [32m200 [0m14.690 ms - 4472[0m
+Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+http://162.243.8.42:3000/signup/confirm?u=S1Ubh3Uve&t=0312f9a88e9104d8640c4f239619de3df0f6ab0d1b9fbed6
+[0mPOST /signup [32m200 [0m976.151 ms - 42[0m
+[0mGET / [36m304 [0m11.334 ms - -[0m
+http://162.243.8.42:3000/signup/confirm?u=Hkfxph8vl&t=f5f4673d978713046c328d4299d840692f5cf80454022700
+[0mPOST /signup [32m200 [0m850.840 ms - 42[0m
+[0mGET / [36m304 [0m4.051 ms - -[0m
+http://162.243.8.42:3000/signup/confirm?u=rJNua2Uwl&t=757285bb13cfe43223aed303fb97783b44b62828f748ee50
+[0mPOST /signup [32m200 [0m872.200 ms - 42[0m
+[0mGET / [36m304 [0m8.197 ms - -[0m
+[0mPOST /signup [33m400 [0m84.887 ms - 47[0m
+[0mGET / [36m304 [0m3.947 ms - -[0m
+http://162.243.8.42:3000/signup/confirm?u=S1ba6n8ve&t=8481365158de3dae12ced4a5c16ddf8848f02d447dfd2e53
+[0mPOST /signup [32m200 [0m909.497 ms - 42[0m
+[0mGET / [36m304 [0m5.345 ms - -[0m
+http://162.243.8.42:3000/signup/confirm?u=SyrVCnUDg&t=7047b79344b26dd62ab743fe1a4fa4afdd765f05e5f32d01
+[0mPOST /signup [32m200 [0m282.749 ms - 42[0m
+[0mGET /signup/confirm?u=SyrVCnUDg&t=7047b79344b26dd62ab743fe1a4fa4afdd765f05e5f32d01 [32m200 [0m437.996 ms - 3830[0m
+[0mGET / [32m200 [0m10.811 ms - 2613[0m
+[0mGET / [32m200 [0m7.962 ms - 2547[0m
+[0mGET / [32m200 [0m10.445 ms - 2547[0m
+[0mGET / [32m200 [0m11.689 ms - 2547[0m
+[0mGET / [32m200 [0m6.116 ms - 2547[0m
+[0mGET / [36m304 [0m7.983 ms - -[0m
+[0mGET / [36m304 [0m7.943 ms - -[0m
+http://162.243.8.42:3000/signup/confirm?u=HyQ7NRDDl&t=d44fec070431e98d15ef50f1f72c86cbc800c6104d8dcb7a
+[0mPOST /signup [32m200 [0m443.086 ms - 42[0m
+[0mGET / [36m304 [0m4.762 ms - -[0m
+http://162.243.8.42:3000/signup/confirm?u=r1CTVCwPl&t=e0020abd8b5cd7b7ebd5ab6e42e2422b89ae0d36f2758ca5
+[0mPOST /signup [32m200 [0m916.944 ms - 42[0m
+[0mGET / [36m304 [0m9.042 ms - -[0m
+http://162.243.8.42:3000/signup/confirm?u=rJHdLADPe&t=63082eeed0678e60efacc7cd10d888b26acb65fd512e83ca
+[0mPOST /signup [32m200 [0m924.784 ms - 42[0m
+[0mGET / [36m304 [0m3.344 ms - -[0m
+http://162.243.8.42:3000/signup/confirm?u=rk8evAwvx&t=75441ac80302f9d16b5226919422df24d23432cb3a57c01e
+[0mPOST /signup [32m200 [0m777.231 ms - 42[0m
+[0mGET / [36m304 [0m2.460 ms - -[0m
+http://162.243.8.42:3000/signup/confirm?u=HyEsvCwPe&t=b0c788a560fbb320f32b5417957c7ef4a85a3cf75fa1a294
+[0mPOST /signup [32m200 [0m280.993 ms - 42[0m
+[0mGET / [32m200 [0m41.230 ms - 2547[0m
+Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+http://162.243.8.42:3000/signup/confirm?u=SyjJK0Dvl&t=3d1e6dda7ab771c50426597486467d9e44dede406e16d2cd
+[0mPOST /signup [32m200 [0m1179.807 ms - 42[0m
+[0mGET / [36m304 [0m7.805 ms - -[0m
+http://162.243.8.42:3000/signup/confirm?u=rkCTF0vDx&t=e69308ab1e742575260bfe83442ad8fb539f22911224a420
+[0mPOST /signup [32m200 [0m607.872 ms - 42[0m
+[0mGET / [32m200 [0m25.698 ms - 2547[0m
+Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+http://162.243.8.42:3000/signup/confirm?u=BJJ83CvPx&t=2c6a1eda3cd124ab3c942b3e38f3843314cdc349802c589a
+[0mPOST /signup [32m200 [0m818.265 ms - 42[0m
+[0mGET / [36m304 [0m11.992 ms - -[0m
+[0mGET /signup/confirm?u=BJJ83CvPx&t=2c6a1eda3cd124ab3c942b3e38f3843314cdc349802c589a [32m200 [0m203.566 ms - 1883[0m
+[0mGET / [32m200 [0m5.336 ms - 2547[0m
+[0mGET / [32m200 [0m7.319 ms - 2547[0m
+[0mGET / [36m304 [0m20.054 ms - -[0m
+[0mGET / [32m200 [0m19.815 ms - 2547[0m
+[0mGET / [32m200 [0m33.668 ms - 2547[0m
+[0mGET / [32m200 [0m8.194 ms - 2547[0m
+[0mGET / [32m200 [0m28.959 ms - 2547[0m
+[0mGET / [32m200 [0m37.101 ms - 2547[0m
+[0mGET /signup/confirm?u=SyrVCnUDg&t=7047b79344b26dd62ab743fe1a4fa4afdd765f05e5f32d01 [32m200 [0m118.999 ms - 1883[0m
+[0mGET / [32m200 [0m8.151 ms - 2547[0m
+http://162.243.8.42:3000/signup/confirm?u=ByW3Vs0wx&t=a9bf9bb2008d9ae108ef6c37e086f58f2d59137373c11b40
+[0mPOST /signup [32m200 [0m1062.575 ms - 42[0m
+[0mGET / [32m200 [0m20.347 ms - 2547[0m
+[0mGET / [32m200 [0m6.494 ms - 2547[0m
+[0mGET / [32m200 [0m7.300 ms - 2547[0m
+[0mGET / [32m200 [0m15.578 ms - 2547[0m
+[0mGET / [32m200 [0m6.365 ms - 2547[0m

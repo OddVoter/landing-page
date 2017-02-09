@@ -1,0 +1,208 @@
+* {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+html {
+  height: 100%;
+  background-color: #f18f01; }
+
+body {
+  width: 100%;
+  height: 100%; }
+
+@font-face {
+  font-family: "DIN-Regular";
+  src: url("/assets/DIN-Regular.otf") format("otf"), url("/assets/din-regular-webfont.woff2") format("woff2"), url("/assets/din-regular-webfont.woff") format("woff"); }
+@font-face {
+  font-family: "dinlight";
+  src: url("/assets/DINPro-Light.otf") format("otf"), url("/assets/DINPro-Light.woff2") format("woff2"), url("/assets/DINPro-Light.woff") format("woff"); }
+@font-face {
+  font-family: "DINPro-Black";
+  src: url("/assets/DINPro-Black.otf") format("otf"), url("/assets/DINPro-Black.woff2") format("woff2"), url("/assets/DINPro-Black.woff") format("woff"); }
+body {
+  font-family: "DIN-Regular", Times, sans-serif;
+  font-weight: 400; }
+
+.light-weight {
+  font-family: "DINPro-Light", "DIN-Regular", Times, sans-serif;
+  font-weight: 300; }
+
+.black-weight {
+  font-family: "DINPro-Black", "DIN-Regular", Times, sans-serif;
+  font-weight: 800; }
+
+.inline {
+  display: inline-block; }
+
+.header-footer-bar {
+  z-index: 2;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #f18f01; }
+  .header-footer-bar#header-bar {
+    height: 14px;
+    top: 0;
+    -webkit-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.14); }
+  .header-footer-bar#footer-bar {
+    height: 28px;
+    bottom: 0; }
+
+div#fixed-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("/assets/orange-skyline.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: -1; }
+
+#header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+
+.sign-up-box {
+  max-width: 400px;
+  width: 80vw;
+  text-align: center; }
+  .sign-up-box img {
+    height: 76px; }
+  .sign-up-box h1 {
+    font-size: 70px;
+    margin-top: 12px;
+    margin-bottom: 12px; }
+    .sign-up-box h1 .light-weight {
+      letter-spacing: -6px;
+      margin-right: 6px; }
+  .sign-up-box p {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 24px; }
+  .sign-up-box input {
+    color: black;
+    float: left;
+    -webkit-appearance: none;
+    margin: 0px;
+    -webkit-border-radius: 0px;
+    vertical-align: middle;
+    width: 238px;
+    height: 33px;
+    border: 1px solid #BCBDBE;
+    padding-left: 12px; }
+    .sign-up-box input::-webkit-input-placeholder {
+      color: #6B6C6D;
+      font-size: 16px; }
+    .sign-up-box input:-moz-placeholder {
+      color: #6B6C6D;
+      font-size: 16px; }
+    .sign-up-box input::-moz-placeholder {
+      color: #6B6C6D;
+      font-size: 16px; }
+    .sign-up-box input:-ms-input-placeholder {
+      color: #6B6C6D;
+      font-size: 16px; }
+  .sign-up-box button {
+    float: left;
+    vertical-align: middle;
+    width: 134px;
+    height: 32px;
+    background-color: #f18f01;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px; }
+
+.section {
+  min-height: 490px;
+  height: 100%;
+  color: #ffffff;
+  margin-top: 14px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative; }
+  .section:before {
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%; }
+  .section:after {
+    position: absolute;
+    content: " ";
+    background-image: url("/assets/divider.png");
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 100%;
+    top: calc(100% - 25px);
+    left: 0px;
+    z-index: 1; }
+  .section .inner {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto; }
+  .section.blue {
+    background-color: #006e90;
+    background-size: auto; }
+  .section h2 {
+    font-size: 30px;
+    text-transform: uppercase; }
+  .section p {
+    max-width: 560px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-size: 20px;
+    line-height: 25px; }
+  .section.for h2 {
+    text-transform: none; }
+  .section.for li {
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: "DINPro-Light", arial, sans-serif;
+    font-weight: 300;
+    line-height: 25px; }
+  .section.for ul {
+    max-width: 340px; }
+  .section.for .inline {
+    margin-left: 32px;
+    margin-right: 32px; }
+  .section.for:after {
+    background-image: none; }
+
+@media only screen and (max-width: 800px) {
+  .section.for .inline {
+    margin-left: 0px;
+    display: block; }
+    .section.for .inline:first-child {
+      margin-bottom: 40px; } }
+@media only screen and (max-width: 375px) {
+  .sign-up-box h1 {
+    font-size: 50px; }
+  .sign-up-box input::-webkit-input-placeholder {
+    font-size: 12px; }
+  .sign-up-box input:-moz-placeholder {
+    font-size: 12px; }
+  .sign-up-box input::-moz-placeholder {
+    font-size: 12px; }
+  .sign-up-box input:-ms-input-placeholder {
+    font-size: 12px; }
+  .sign-up-box button {
+    font-size: 12px; }
+
+  .section.for h2 {
+    font-size: 24px; }
+  .section.for li {
+    font-size: 14px;
+    line-height: 20px; } }
+@media only screen and (max-width: 560px) {
+  .what .inner {
+    float: left;
+    margin: 20px;
+    margin-top: 40px; } }
+
+/*# sourceMappingURL=styles.css.map */
