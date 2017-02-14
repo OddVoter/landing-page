@@ -205,4 +205,12 @@ div#fixed-background {
     margin: 20px;
     margin-top: 40px; } }
 
+.alert-warning {
+  clear: both;
+}
+
+.alert-info {
+  clear: both;
+}
+
 /*# sourceMappingURL=styles.css.map */
